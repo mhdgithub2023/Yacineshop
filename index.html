@@ -1,12 +1,218 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yacine Shop</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yacine Shop | Boutique en ligne</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f8f8f8;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0b6623, #f4c400, #d71920);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    header img {
+      width: 180px;
+      background: white;
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: #0b6623;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      color: #0b6623;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 14px 25px;
+      background: #0b6623;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      color: #0b6623;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #d71920;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .contact h2 {
+      margin-bottom: 20px;
+      color: #f4c400;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #0b6623;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-<h1>Bienvenue sur Yacine Shop</h1>
-<p>Site actuellement en construction.</p>
+
+  <header>
+    <img src="logo-yacine-shop.jpg" alt="Logo Yacine Shop">
+    <h1>Yacine Shop</h1>
+    <p>Votre boutique moderne à Dixinn, Conakry 🇬🇳</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="accueil">
+    <h2>Bienvenue chez Yacine Shop</h2>
+    <p>
+      Yacine Shop est votre boutique en ligne dédiée à la vente de produits de qualité
+      avec un service rapide, fiable et professionnel à Conakry.
+    </p>
+    <a class="btn" href="https://wa.me/224627775483">Commander sur WhatsApp</a>
+  </section>
+
+  <section class="section" id="produits">
+    <h2>Nos Produits</h2>
+
+    <div class="products">
+      <div class="card">
+        <h3>Parfums</h3>
+        <p>Des senteurs élégantes pour toutes les occasions.</p>
+      </div>
+
+      <div class="card">
+        <h3>Senteurs Maison</h3>
+        <p>Des parfums d’intérieur pour rendre votre espace agréable.</p>
+      </div>
+
+      <div class="card">
+        <h3>Accessoires</h3>
+        <p>Des articles pratiques et tendance pour votre quotidien.</p>
+      </div>
+
+      <div class="card">
+        <h3>Commandes Spéciales</h3>
+        <p>Contactez-nous pour vos besoins personnalisés.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="apropos">
+    <h2>À propos de nous</h2>
+    <p style="text-align:center; line-height:1.7; font-size:18px;">
+      Basée à Dixinn, Conakry, Yacine Shop met à votre disposition une sélection
+      de produits de qualité avec un accompagnement client sérieux, rapide et professionnel.
+    </p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>📞 Téléphone : +224 627 77 54 83</p>
+    <p>📧 Email : contact@Yacineshop.com</p>
+    <p>📍 Adresse : Guinée 🇬🇳, Dixinn Conakry</p>
+    <a class="btn" href="https://wa.me/224627775483">Nous contacter sur WhatsApp</a>
+  </section>
+
+  <footer>
+    © 2026 Yacine Shop — Tous droits réservés.
+  </footer>
+
 </body>
 </html>
